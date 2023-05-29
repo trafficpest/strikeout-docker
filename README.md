@@ -1,15 +1,16 @@
-#Strikeout docker build tool
+# Strikeout Docker Build Tool
 
-unzip or git strikeout to /app/strikeout dir
+Unzip or Git Strikeout to /app/strikeout directory.
 
-from this docker app root directory (should be a Dockerfile) build the image
+From the Docker app root directory (should be a Dockerfile), build the image:
 `docker build -t debian-slim:strikeout ./`
 
-then crete and run the container
+Then create and run the container:
 `docker run -d -v $PWD/app:/app --name strikeout -p 80:80 -p 3306:3306 debian-slim:strikeout`
 
-to stop the app container
+To stop the app container:
 `docker stop strikeout`
 
-to start the already created container
+To start the already created container:
 `docker start strikeout`
+
